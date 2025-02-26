@@ -1,7 +1,7 @@
 {
   "name": "SpoolEase-Fix-ImproveMqtt",
   "version": "0.1.5",
-  "improv": true,
+  "improv": false,
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 30,
   "builds": [
