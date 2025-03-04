@@ -390,11 +390,29 @@
               Web Flash Main 0.1.8-alpha-1<br />(Chrome / Edge Only)
             </button>
           </esp-web-install-button>
+
+<!-- patch1 : 20 retries with 200ms delay, every 10 wake_up with 100ms delay after, still 10ms wake_up -->
+        <div>
+          <esp-web-install-button
+            id="improve-mqtt-button"
+            manifest="improve-mqtt/manifest-0.1.8-alpha-1-Patch1.json"
+          >
+            <button slot="activate" class="start-button">
+              Web Flash Main 0.1.8-alpha-1-Patch1<br />(Chrome / Edge Only)
+            </button>
+          </esp-web-install-button>
         </div>
-        <!-- Features Section -->
       </div>
-      <!-- Features Section -->
     </div>
+
+
+
+
+
+
+
+
+
     <script>
       // for local debugging case
       window.addEventListener("DOMContentLoaded", () => {
