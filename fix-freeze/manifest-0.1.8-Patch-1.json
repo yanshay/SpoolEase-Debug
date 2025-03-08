@@ -8,7 +8,6 @@
     {
       "chipFamily": "ESP32-S3",
       "parts": [
-        { "path": "clear-ota.bin", "offset": 36864 },
         { "path": "SpoolEase-0.1.8-Patch-1.bin", "offset": 2097152 }
       ]
     }
