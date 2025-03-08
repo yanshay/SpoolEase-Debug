@@ -1,0 +1,15 @@
+{
+  "name": "SpoolEase-0.1.8-Patch-3",
+  "version": "Patch-1",
+  "improv": false,
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 30,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "SpoolEase-0.1.8-Patch-3.bin", "offset": 2097152 }
+      ]
+    }
+  ]
+}
