@@ -1,0 +1,15 @@
+{
+  "name": "TestGithubRead-2",
+  "version": "2",
+  "improv": false,
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 30,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "test-github-read-2.bin", "offset": 2097152 }
+      ]
+    }
+  ]
+}
