@@ -317,6 +317,30 @@
           </div>
         </div>
 
+<!-- - Encode a tag from scratch, not based on a slot or staging. When staging is empty, press Encode and then Staging, which will display Start Clean. -->
+<!-- - Allow setting slicer filament name in inventory, including both Bambulab default filaments and your custom filaments configured via Web Config (see upgrade note). -->
+<!-- - Improved encode screen editing: all fields can now be set directly from mobile, using the same layout as inventory. Add/Edit is now more mobile-friendly. -->
+<!-- - Inventory records now include Add Date/Time (currently, requires internet to fetch global time, in the future this requirement will be somewhat relaxed). -->
+<!-- - Backup now includes all files (restore still not implemented). -->
+<!-- - Simplified adding multiple inventory records consecutively, either continuing from previous data or starting fresh. -->
+<!-- - Inventory now defaults to sorting by ID. -->
+<!-- - Encoding is supported even before a printer is connected, or without configuring a printer at all — enabling inventory and weight tracking standalone, without a Bambu printer. -->
+<!---->
+<!-- Upgrade Note: -->
+<!-- - If you’ve configured custom filaments (in Web Config or in the Mobile Tag Web App), reconfigure them to include temperature settings for full functionality. -->
+
+        <div>
+          <div style="margin-top: 5px;">
+            <esp-web-install-button
+              manifest="console/manifest-console-0.4.0-alpha9.json"
+            >
+              <button slot="activate" class="start-button">
+                Console 0.4.0-alpha9<br />(Chrome / Edge Only)
+              </button>
+            </esp-web-install-button>
+          </div>
+        </div>
+
       </div>
 
 
