@@ -363,6 +363,7 @@
 <!-- ################# Below are Scale versions ####################### -->
 
       <div style="flex: 1; padding: 10px;">
+
         <h3>Web Flash Scale</h3>
         <div>
           <div style="margin-top: 5px;">
@@ -375,6 +376,20 @@
             </esp-web-install-button>
           </div>
         </div>
+
+        <!-- remove bad sample when weight is zero from time to time that undims the display --> 
+        <div>
+          <div style="margin-top: 5px;">
+            <esp-web-install-button
+              manifest="scale/manifest-scale-0.4.0-alpha2.json"
+            >
+              <button slot="activate" class="start-button">
+                Scale 0.4.0-alpha2<br />(Chrome / Edge Only)
+              </button>
+            </esp-web-install-button>
+          </div>
+        </div>
+
       </div>
     </div>
       </div>
