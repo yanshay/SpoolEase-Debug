@@ -24,6 +24,23 @@
         flex-direction: column;
       }
 
+      li {
+        margin: 4px;
+        padding: 0;
+        line-height: 1.2;
+        text-indent: -1.5em;   /* pull first line back */
+        padding-left: 1.5em;   /* push following lines forward */
+      }
+      ul {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          list-style-position: inside; /* optional */
+          gap:0px;
+      }
+
       .video {
         margin: 0;
         text-align: center;
@@ -213,6 +230,7 @@
     <div style="display: flex;">
       <div style="flex: 1; padding: 10px;">
       <h3>Web Flash Console</h3>
+      <hr/>
 
 <!-- - Encode a tag from scratch, not based on a slot or staging. When staging is empty, press Encode and then Staging, which will display Start Clean. -->
 <!-- - Allow setting slicer filament name in inventory, including both Bambulab default filaments and your custom filaments configured via Web Config (see upgrade note). -->
@@ -231,95 +249,100 @@
         <!-- add color names and ability to set rgba from color names in inventory -->
         <!-- fix: in web config, removing printer enables apply button -->
         <!-- Many changes, see release notes -->
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="console/manifest-console-0.4.0-alpha11.json"
-            >
-              <button slot="activate" class="start-button">
-                Console 0.4.0-alpha11<br />(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="console/manifest-console-0.4.0-alpha11.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Console 0.4.0-alpha11<br />(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!---->
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="console/manifest-console-0.4.0-alpha-mem-12.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Console 0.4.0-alpha-mem-12<br />Don't use if not in sync with yanshay<br/>(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
 
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="console/manifest-console-0.4.0-alpha-mem-12.json"
-            >
-              <button slot="activate" class="start-button">
-                Console 0.4.0-alpha-mem-12<br />Don't use if not in sync with yanshay<br/>(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
+        <!-- <hr> -->
 
-        <hr>
-
-          <!-- first release of ams weight tracking -->
-        <span>With weight tracking inside AMS<br>Make sure to read the release notes related to this specific alpha version (alpha20) update in <a href="https://github.com/yanshay/SpoolEase/discussions/46">pre-release discussion</a></span>
-        <span>support external spool in weight tracking and improved external spool handilng in general</span> 
-        <span>weight tracking in Orca (including external spool), Lan Mode</span>
-        <span>scale used to process 3mf if scale can't handle it</span>
-        <span>try improve detailed logs on x1c</span>
-        <span>fix format difference between x1c cloud mode and the rest</span>
-        <span>support new firmwares mqtt changes + improved x1c SIM log support</span>
-        <span>larger queue + additional logs including queue</span>
-        <span>fixed bug in inventory causing material issues with printer (Chris)</span>
-        <span>fixed bug in tag reading that poped by samsung smartwatch near the reader</span>
-        <span>increased internal queues to support higher printer loads with logging</span>
-        <span>change in ftp tls connectivity (for x1c but not yet fully working)</span>
-        <span>fix for H2D</span>
+        <!-- first release of ams weight tracking -->
+        <ul>
+           <li>With weight tracking inside AMS<br>Make sure to read the release notes related to this specific alpha version (alpha20) update in <a href="https://github.com/yanshay/SpoolEase/discussions/46">pre-release discussion</a></li></span>
+        </ul>
+        <!-- <span>support external spool in weight tracking and improved external spool handilng in general</span> </br> -->
+        <!-- <span>weight tracking in Orca (including external spool), Lan Mode</span></br> -->
+        <!-- <span>scale used to process 3mf if scale can't handle it</span></br> -->
+        <!-- <span>try improve detailed logs on x1c</span> -->
+        <!-- <span>fix format difference between x1c cloud mode and the rest</span> -->
+        <!-- <span>support new firmwares mqtt changes + improved x1c SIM log support</span> -->
+        <!-- <span>larger queue + additional logs including queue</span> -->
+        <!-- <span>fixed bug in inventory causing material issues with printer (Chris)</span> -->
+        <!-- <span>fixed bug in tag reading that poped by samsung smartwatch near the reader</span> -->
+        <!-- <span>increased internal queues to support higher printer loads with logging</span> -->
+        <!-- <span>change in ftp tls connectivity (for x1c but not yet fully working)</span> -->
+        <!-- <span>fix for H2D</span> -->
+        <!-- <div> -->
+        <!--   <div style=""> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="console/manifest-console-0.4.0-alpha37.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Console 0.4.0-alpha37<br />(Crome/Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!---->
+        <!-- <span>fix gcode processing for A1</span> -->
+        <!-- <div> -->
+        <!--   <div style=""> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="console/manifest-console-0.4.0-alpha38.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Console 0.4.0-alpha38<br />(Crome/Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!-- <li>fix K not showing in AMS slot detailed view</li> -->
         <div>
-          <div style="">
-            <esp-web-install-button
-              manifest="console/manifest-console-0.4.0-alpha37.json"
-            >
-              <button slot="activate" class="start-button">
-                Console 0.4.0-alpha37<br />()
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
-
-        <span>fix gcode processing for A1</span>
-        <div>
-          <div style="">
-            <esp-web-install-button
-              manifest="console/manifest-console-0.4.0-alpha38.json"
-            >
-              <button slot="activate" class="start-button">
-                Console 0.4.0-alpha38<br />()
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
-
-        <span>fix K not showing in AMS slot detailed view</span>
-        <div>
-          <div style="">
+          <div style="margin-top: 10px;">
             <esp-web-install-button
               manifest="console/manifest-console-0.4.0-alpha39.json"
             >
               <button slot="activate" class="start-button">
-                Console 0.4.0-alpha39<br />()
+                Console 0.4.0-alpha39<br />(Crome/Edge Only)
               </button>
             </esp-web-install-button>
           </div>
         </div>
 
-        <span>AMS HT Support</span>
-        <span>Improved encode flow, with initial documentation in docs.spoolease.io - requires Scale alpha50</span>
-        <span>Encoding and launching Encode Web App supported also using Scale NFC reader</span>
-        <span>Risky release, many changes all over, be prepared to help with logging/testing/debugging</span>
+        <div style="text-align: left; margin:0; ">
+          <ul>
+            <li>AMS HT Support</li>
+            <li>Improved encode flow, with initial documentation in docs.spoolease.io - requires Scale alpha50</li>
+            <li>Encoding and launching Encode Web App supported also using Scale NFC reader</li>
+            <li>Risky release, many changes all over, be prepared to help with logging/testing/debugging</li>
+          </ul>
+        </div>
         <div>
           <div style="">
             <esp-web-install-button
               manifest="console/manifest-console-0.4.0-alpha50.json"
             >
               <button slot="activate" class="start-button">
-                Console 0.4.0-alpha50<br />()
+                Console 0.4.0-alpha50<br />(Crome/Edge Only)
               </button>
             </esp-web-install-button>
           </div>
@@ -334,59 +357,62 @@
       <div style="flex: 1; padding: 10px;">
 
         <h3>Web Flash Scale</h3>
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="scale/manifest-scale-0.4.0-alpha1.json"
-            >
-              <button slot="activate" class="start-button">
-                Scale 0.4.0-alpha1<br />(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
+        <hr/>
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="scale/manifest-scale-0.4.0-alpha1.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Scale 0.4.0-alpha1<br />(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!---->
+        <!-- <!-- remove bad sample when weight is zero from time to time that undims the display -->
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="scale/manifest-scale-0.4.0-alpha2.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Scale 0.4.0-alpha2<br />(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!---->
+        <!-- <span>required for console starting alpha-24</span> -->
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="scale/manifest-scale-0.4.0-alpha24.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Scale 0.4.0-alpha24<br />(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
+        <!---->
+        <!---->
+        <!-- <span>try to fix calibration issues</span> -->
+        <!-- <div> -->
+        <!--   <div style="margin-top: 5px;"> -->
+        <!--     <esp-web-install-button -->
+        <!--       manifest="scale/manifest-scale-0.4.0-alpha26.json" -->
+        <!--     > -->
+        <!--       <button slot="activate" class="start-button"> -->
+        <!--         Scale 0.4.0-alpha26<br />(Chrome / Edge Only) -->
+        <!--       </button> -->
+        <!--     </esp-web-install-button> -->
+        <!--   </div> -->
+        <!-- </div> -->
 
-        <!-- remove bad sample when weight is zero from time to time that undims the display --> 
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="scale/manifest-scale-0.4.0-alpha2.json"
-            >
-              <button slot="activate" class="start-button">
-                Scale 0.4.0-alpha2<br />(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
-
-        <span>required for console starting alpha-24</span>
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="scale/manifest-scale-0.4.0-alpha24.json"
-            >
-              <button slot="activate" class="start-button">
-                Scale 0.4.0-alpha24<br />(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
-
-
-        <span>try to fix calibration issues</span>
-        <div>
-          <div style="margin-top: 5px;">
-            <esp-web-install-button
-              manifest="scale/manifest-scale-0.4.0-alpha26.json"
-            >
-              <button slot="activate" class="start-button">
-                Scale 0.4.0-alpha26<br />(Chrome / Edge Only)
-              </button>
-            </esp-web-install-button>
-          </div>
-        </div>
-
-        <span>fixed bug in tag reading that poped by samsung smartwatch near the reader</span>
+        <ul>
+          <li>fixed bug in tag reading that poped by samsung smartwatch near the reader</li>
+        </ul>
         <div>
           <div style="margin-top: 5px;">
             <esp-web-install-button
@@ -399,7 +425,9 @@
           </div>
         </div>
 
-        <span>Support for improved encode flow, required by Console alpha50</span>
+        <ul>
+          <li>Support for improved encode flow, required by Console alpha50</li>
+        </ul>
         <div>
           <div style="margin-top: 5px;">
             <esp-web-install-button
