@@ -309,14 +309,17 @@
           </div>
         </div>
 
-        <span>AMS HT Support - risky release </span>
+        <span>AMS HT Support</span>
+        <span>Improved encode flow, with initial documentation in docs.spoolease.io - requires Scale alpha50</span>
+        <span>Encoding and launching Encode Web App supported also using Scale NFC reader</span>
+        <span>Risky release, many changes all over, be prepared to help with logging/testing/debugging</span>
         <div>
           <div style="">
             <esp-web-install-button
-              manifest="console/manifest-console-0.4.0-alpha42.json"
+              manifest="console/manifest-console-0.4.0-alpha50.json"
             >
               <button slot="activate" class="start-button">
-                Console 0.4.0-alpha42<br />()
+                Console 0.4.0-alpha50<br />()
               </button>
             </esp-web-install-button>
           </div>
@@ -391,6 +394,19 @@
             >
               <button slot="activate" class="start-button">
                 Scale 0.4.0-alpha27<br />(Chrome / Edge Only)
+              </button>
+            </esp-web-install-button>
+          </div>
+        </div>
+
+        <span>Support for improved encode flow, required by Console alpha50</span>
+        <div>
+          <div style="margin-top: 5px;">
+            <esp-web-install-button
+              manifest="scale/manifest-scale-0.4.0-alpha50.json"
+            >
+              <button slot="activate" class="start-button">
+                Scale 0.4.0-alpha50<br />(Chrome / Edge Only)
               </button>
             </esp-web-install-button>
           </div>
