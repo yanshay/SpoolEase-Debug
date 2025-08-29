@@ -36,6 +36,8 @@
           display: flex;
           flex-direction: column;
           margin: 0;
+          margin-top: 10px;
+          border-top: 1px solid black;
           padding: 0;
           list-style-position: inside; /* optional */
           gap:0px;
@@ -230,7 +232,6 @@
     <div style="display: flex;">
       <div style="flex: 1; padding: 10px;">
       <h3>Web Flash Console</h3>
-      <hr/>
 
 <!-- - Encode a tag from scratch, not based on a slot or staging. When staging is empty, press Encode and then Staging, which will display Start Clean. -->
 <!-- - Allow setting slicer filament name in inventory, including both Bambulab default filaments and your custom filaments configured via Web Config (see upgrade note). -->
@@ -328,14 +329,12 @@
           </div>
         </div>
 
-        <div style="text-align: left; margin:0; ">
-          <ul>
-            <li>AMS HT Support</li>
-            <li>Improved encode flow, with initial documentation in docs.spoolease.io - requires Scale alpha50</li>
-            <li>Encoding and launching Encode Web App supported also using Scale NFC reader</li>
-            <li>Risky release, many changes all over, be prepared to help with logging/testing/debugging</li>
-          </ul>
-        </div>
+        <ul>
+          <li>AMS HT Support</li>
+          <li>Improved encode flow, with initial documentation in docs.spoolease.io - requires Scale alpha50</li>
+          <li>Encoding and launching Encode Web App supported also using Scale NFC reader</li>
+          <li>Risky release, many changes all over, be prepared to help with logging/testing/debugging</li>
+        </ul>
         <div>
           <div style="">
             <esp-web-install-button
@@ -343,6 +342,22 @@
             >
               <button slot="activate" class="start-button">
                 Console 0.4.0-alpha50<br />(Crome/Edge Only)
+              </button>
+            </esp-web-install-button>
+          </div>
+        </div>
+
+        <ul>
+          <li>Support X1C weight tracking in AMS using ftp</li>
+          <li>Requires Scale alpha51</li>
+        </ul>
+        <div>
+          <div style="">
+            <esp-web-install-button
+              manifest="console/manifest-console-0.4.0-alpha51.json"
+            >
+              <button slot="activate" class="start-button">
+                Console 0.4.0-alpha51<br />(Crome/Edge Only)
               </button>
             </esp-web-install-button>
           </div>
@@ -357,7 +372,6 @@
       <div style="flex: 1; padding: 10px;">
 
         <h3>Web Flash Scale</h3>
-        <hr/>
         <!-- <div> -->
         <!--   <div style="margin-top: 5px;"> -->
         <!--     <esp-web-install-button -->
@@ -435,6 +449,21 @@
             >
               <button slot="activate" class="start-button">
                 Scale 0.4.0-alpha50<br />(Chrome / Edge Only)
+              </button>
+            </esp-web-install-button>
+          </div>
+        </div>
+
+        <ul>
+          <li>Required for Console alpha50</li>
+        </ul>
+        <div>
+          <div style="margin-top: 5px;">
+            <esp-web-install-button
+              manifest="scale/manifest-scale-0.4.0-alpha51.json"
+            >
+              <button slot="activate" class="start-button">
+                Scale 0.4.0-alpha51<br />(Chrome / Edge Only)
               </button>
             </esp-web-install-button>
           </div>
