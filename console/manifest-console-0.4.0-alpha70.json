@@ -1,6 +1,6 @@
 {
-  "name": "SpoolEaseConsole-0.4.0-alph70",
-  "version": "0.4.0-alph70",
+  "name": "SpoolEaseConsole-0.4.0-alpha70",
+  "version": "0.4.0-alpha70",
   "improv": false,
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 30,
@@ -9,7 +9,7 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         { "path": "clear-ota.bin", "offset": 36864 },
-        { "path": "SpoolEase-0.4.0-alph70.bin", "offset": 2097152 }
+        { "path": "SpoolEase-0.4.0-alpha70.bin", "offset": 2097152 }
       ]
     }
   ]
